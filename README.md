@@ -22,7 +22,7 @@
 ```xml
         <!-- 微信支付 -->
         <activity
-            android:name="com.ci123.service.pay.weixin.WXPayCallbackActivity"
+            android:name="com.tsy.pay.weixin.WXPayCallbackActivity"
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"
             android:launchMode="singleTop"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
@@ -30,7 +30,7 @@
         <activity-alias
             android:name=".wxapi.WXPayEntryActivity"
             android:exported="true"
-            android:targetActivity="com.ci123.service.pay.weixin.WXPayCallbackActivity" />
+            android:targetActivity="com.tsy.pay.weixin.WXPayCallbackActivity" />
 
         <!-- 支付宝支付 -->
         <activity
