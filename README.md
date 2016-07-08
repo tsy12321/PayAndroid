@@ -1,6 +1,8 @@
 # PayAndroid
 对微信支付和支付宝支付的App端SDK进行二次封装，对外提供一个较为简单的接口和支付结果回调
 
+注：生成pay_param的部分可见：http://www.jianshu.com/p/9b353529f02c
+
 ## Android SDK接入指南
 
 ### 1. 下载最新SDK，以module的方式引入。
