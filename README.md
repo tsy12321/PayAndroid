@@ -141,4 +141,4 @@
 
 ### 欢迎关注我的公众号
 
-![我的公众号](http://upload-images.jianshu.io/upload_images/1594931-a5b65451c706c2cd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![我的公众号](https://github.com/tsy12321/PayAndroid/blob/master/wxmp_avatar.jpg)
