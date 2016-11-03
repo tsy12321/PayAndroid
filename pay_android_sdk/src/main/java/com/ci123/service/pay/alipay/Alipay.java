@@ -1,4 +1,4 @@
-package com.tsy.pay.alipay;
+package com.ci123.service.pay.alipay;
 
 import android.app.Activity;
 import android.content.Context;
@@ -6,6 +6,8 @@ import android.os.Handler;
 import android.text.TextUtils;
 
 import com.alipay.sdk.app.PayTask;
+
+import java.util.Map;
 
 /**
  * 支付宝支付
@@ -39,9 +41,7 @@ public class Alipay {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                String result = mPayTask.pay(mParams, true);
-
-                final AlipayResult pay_result = new AlipayResult(result);
+                final Map<String, String> pay_result = mPayTask.payV2(mParams,true);
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
@@ -54,7 +54,7 @@ public class Alipay {
                             return;
                         }
 
-                        String resultStatus = pay_result.getResultStatus();
+                        String resultStatus = pay_result.get("resultStatus");
                         if(TextUtils.equals(resultStatus, "9000")) {    //支付成功
                             mCallback.onSuccess();
                         } else if(TextUtils.equals(resultStatus, "8000")) { //支付结果因为支付渠道原因或者系统原因还在等待支付结果确认，最终交易是否成功以服务端异步通知为准（小概率状态）

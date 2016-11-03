@@ -1,7 +1,17 @@
 # PayAndroid
-对微信支付和支付宝支付的App端SDK进行二次封装，对外提供一个较为简单的接口和支付结果回调
 
-注：生成pay_param的部分可见：http://www.jianshu.com/p/9b353529f02c
+> 对微信支付和支付宝支付的App端SDK进行二次封装，对外提供一个较为简单的接口和支付结果回调
+
+
+## 注意注意：支付宝开放平台新支付的通知！
+
+支付宝升级了支付模式，增加开放平台的概念，之前只要在商户平台申请pid即可实现支付，现在是在开放平台创建App，根据相应APP_ID发起支付。更新后调用方式不变。
+
+1. 老版本接口支付
+   pay_param生成参见：http://www.jianshu.com/p/9b353529f02c
+
+2. 新版本接口支付
+   pay_param生成参见：http://www.jianshu.com/p/59341ea9d86d
 
 ## Android SDK接入指南
 

@@ -1,4 +1,4 @@
-package com.tsy.pay.weixin;
+package com.ci123.service.pay.weixin;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -73,7 +73,7 @@ public class WXPay {
             }
             return;
         }
-        if(param == null || TextUtils.isEmpty(param.optString("appid")) || TextUtils.isEmpty(param.optString("partnerid"))
+        if(TextUtils.isEmpty(param.optString("appid")) || TextUtils.isEmpty(param.optString("partnerid"))
                 || TextUtils.isEmpty(param.optString("prepayid")) || TextUtils.isEmpty(param.optString("package")) ||
                 TextUtils.isEmpty(param.optString("noncestr")) || TextUtils.isEmpty(param.optString("timestamp")) ||
                 TextUtils.isEmpty(param.optString("sign"))) {

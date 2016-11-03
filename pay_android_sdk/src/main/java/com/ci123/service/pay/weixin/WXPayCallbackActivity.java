@@ -1,11 +1,11 @@
-package com.tsy.pay.weixin;
+package com.ci123.service.pay.weixin;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.tsy.pay.R;
+import com.ci123.service.pay.R;
 import com.tencent.mm.sdk.constants.ConstantsAPI;
 import com.tencent.mm.sdk.modelbase.BaseReq;
 import com.tencent.mm.sdk.modelbase.BaseResp;
