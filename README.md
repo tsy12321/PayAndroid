@@ -16,10 +16,8 @@
 2. 新版本接口支付
    pay_param生成参见：http://www.jianshu.com/p/59341ea9d86d
 
-## Android SDK接入指南
-
-### 如何添加
-#### 1.在Project的build.gradle 中添加仓库地址
+## 1. 如何添加
+#### 在Project的build.gradle 中添加仓库地址
 
 ``` gradle
 allprojects {
@@ -31,13 +29,13 @@ allprojects {
 }
 ```
 
-#### 2.在app目录下的build.gradle中添加依赖
+#### 在app目录下的build.gradle中添加依赖
 
 ```gradle
     compile 'com.github.tsy12321:PayAndroid:1.0.0'
 ```
 
-### 2. Android Manifest配置
+## 2. Android Manifest配置
 
 **权限声明**
 
@@ -77,9 +75,9 @@ allprojects {
             android:screenOrientation="behind"></activity>
 ```
 
-### 3. 发起支付
+## 3. 发起支付
 
-#### 3.1 微信支付
+### 3.1 微信支付
 
 ```java
    /**
@@ -120,7 +118,7 @@ allprojects {
     }
 ```
 
-#### 3.2 支付宝支付
+### 3.2 支付宝支付
 
 ```java
    /**
