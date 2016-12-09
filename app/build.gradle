@@ -24,5 +24,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.2.1'
 
-    compile project(':pay_android_sdk')
+//    compile project(':pay_android_sdk')
+    compile 'com.github.tsy12321:PayAndroid:1.0.0'
 }
