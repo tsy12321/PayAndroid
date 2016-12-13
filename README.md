@@ -1,7 +1,6 @@
 # PayAndroid
 
 [![License](https://img.shields.io/badge/license-Apache%202-green.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-[![](https://jitpack.io/v/tsy12321/PayAndroid.svg)](https://jitpack.io/#tsy12321/PayAndroid)
 
 > 对微信支付和支付宝支付的App端SDK进行二次封装，对外提供一个较为简单的接口和支付结果回调
 
@@ -23,8 +22,7 @@
 allprojects {
     repositories {
         jcenter()
-        // JitPack仓库地址
-        maven { url "https://jitpack.io" }
+        maven { url "https://dl.bintray.com/tangsiyuan/maven" }
     }
 }
 ```
@@ -32,7 +30,7 @@ allprojects {
 #### 在app目录下的build.gradle中添加依赖
 
 ```gradle
-    compile 'com.github.tsy12321:PayAndroid:1.0.0'
+    compile 'com.tsy:pay:1.0.0'
 ```
 
 ## 2. Android Manifest配置

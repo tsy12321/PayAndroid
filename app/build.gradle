@@ -17,6 +17,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
@@ -25,5 +28,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:24.2.1'
 
 //    compile project(':pay_android_sdk')
-    compile 'com.github.tsy12321:PayAndroid:1.0.0'
+    compile 'com.tsy:pay:1.0.0'
 }

@@ -1,7 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
-
-group='com.github.tsy12321'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 24
@@ -25,4 +23,13 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.2.1'
+}
+
+publish {
+    userOrg = 'tangsiyuan'
+    groupId = 'com.tsy'
+    artifactId = 'pay'
+    publishVersion = '1.0.0'
+    desc = '对微信支付和支付宝支付的App端SDK进行二次封装'
+    website = 'https://github.com/tsy12321/PayAndroid'
 }
