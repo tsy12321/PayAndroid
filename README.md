@@ -16,21 +16,11 @@
    pay_param生成参见：http://www.jianshu.com/p/59341ea9d86d
 
 ## 1. 如何添加
-#### 在Project的build.gradle 中添加仓库地址
-
-``` gradle
-allprojects {
-    repositories {
-        jcenter()
-        maven { url "https://dl.bintray.com/tangsiyuan/maven" }
-    }
-}
-```
 
 #### 在app目录下的build.gradle中添加依赖
 
 ```gradle
-    compile 'com.tsy:pay:1.0.0'
+compile 'com.tsy:pay:1.0.0'
 ```
 
 ## 2. Android Manifest配置
