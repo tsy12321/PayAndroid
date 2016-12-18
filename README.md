@@ -41,7 +41,7 @@ compile 'com.tsy:pay:1.0.0'
 ```xml
         <!-- 微信支付 -->
         <activity
-            android:name="com.tsy.pay.weixin.WXPayCallbackActivity"
+            android:name="com.tsy.sdk.pay.weixin.WXPayCallbackActivity"
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"
             android:launchMode="singleTop"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
