@@ -156,6 +156,18 @@ compile 'com.tsy:pay:1.0.0'
     }
 ```
 
+## Demo使用
+
+项目中Demo支付宝支付可以直接使用。微信支付需要修改以下：
+
+1. PackageName和ApplicationId设置为自己的（与微信开放平台填入的包名一致）
+1. 使用自己的签名进行打包（与微信开放平台填入签名一致）
+
+
+Demo示例：
+
+![Demo](https://github.com/tsy12321/PayAndroid/blob/master/preview/demo.jpg)
+
 ## About Me
 简书地址：http://www.jianshu.com/users/21716b19302d/latest_articles
 

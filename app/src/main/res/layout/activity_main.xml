@@ -122,7 +122,8 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="20dp"
-                android:text="获取客户端IP"/>
+                android:text="获取客户端IP"
+                android:visibility="gone"/>
 
         </LinearLayout>
     </ScrollView>
