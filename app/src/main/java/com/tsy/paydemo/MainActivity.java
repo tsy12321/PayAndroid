@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * @param pay_param 支付服务生成的支付参数
      */
     private void doWXPay(String pay_param) {
-        String wx_appid = "wx6b69bdbf2adca4f8";     //替换为自己的appid
+        String wx_appid = "wxXXXXXXX";     //替换为自己的appid
         WXPay.init(getApplicationContext(), wx_appid);      //要在支付前调用
         WXPay.getInstance().doPay(pay_param, new WXPay.WXPayResultCallBack() {
             @Override

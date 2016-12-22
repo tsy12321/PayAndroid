@@ -41,7 +41,7 @@ compile 'com.tsy:pay:1.0.0'
 ```xml
         <!-- 微信支付 -->
         <activity
-            android:name="com.tsy.sdk.pay.weixin.WXPayCallbackActivity"
+            android:name="com.tsy.sdk.pay.weixin.WXPayCallbackActivity"
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"
             android:launchMode="singleTop"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
@@ -49,7 +49,7 @@ compile 'com.tsy:pay:1.0.0'
         <activity-alias
             android:name=".wxapi.WXPayEntryActivity"
             android:exported="true"
-            android:targetActivity="com.tsy.pay.weixin.WXPayCallbackActivity" />
+            android:targetActivity="com.tsy.sdk.pay.weixin.WXPayCallbackActivity" />
 
         <!-- 支付宝支付 -->
         <activity
@@ -74,7 +74,7 @@ compile 'com.tsy:pay:1.0.0'
      * @param pay_param 支付服务生成的支付参数
      */
     private void doWXPay(String pay_param) {
-        String wx_appid = "wx6b69bdbf2adca4f8";     //替换为自己的appid
+        String wx_appid = "wxXXXXXXX";     //替换为自己的appid
         WXPay.init(getApplicationContext(), wx_appid);      //要在支付前调用
         WXPay.getInstance().doPay(pay_param, new WXPay.WXPayResultCallBack() {
             @Override
@@ -160,6 +160,7 @@ compile 'com.tsy:pay:1.0.0'
 
 项目中Demo支付宝支付可以直接使用。微信支付需要修改以下：
 
+1. appid需要替换为自己的微信appid
 1. PackageName和ApplicationId设置为自己的（与微信开放平台填入的包名一致）
 1. 使用自己的签名进行打包（与微信开放平台填入签名一致）
 
