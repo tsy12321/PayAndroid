@@ -169,6 +169,28 @@ Demo示例：
 
 ![Demo](https://github.com/tsy12321/PayAndroid/blob/master/preview/demo.jpg)
 
+## 混淆
+
+```
+#pay
+-dontwarn com.tsy.sdk.pay.**
+-keep class com.tsy.sdk.pay.**{*;}
+
+#weixin sdk
+-dontwarn com.tencent.mm.sdk.**{*;}
+-keep class com.tencent.mm.sdk.**{*;}
+
+#alipay
+-libraryjars libs/alipaySDK-20150602.jar
+
+-keep class com.alipay.android.app.IAlixPay{*;}
+-keep class com.alipay.android.app.IAlixPay$Stub{*;}
+-keep class com.alipay.android.app.IRemoteServiceCallback{*;}
+-keep class com.alipay.android.app.IRemoteServiceCallback$Stub{*;}
+-keep class com.alipay.sdk.app.PayTask{ public *;}
+-keep class com.alipay.sdk.app.AuthTask{ public *;}
+```
+
 ## About Me
 简书地址：http://www.jianshu.com/users/21716b19302d/latest_articles
 
