@@ -176,19 +176,19 @@ Demo示例：
 -dontwarn com.tsy.sdk.pay.**
 -keep class com.tsy.sdk.pay.**{*;}
 
-#weixin sdk
--dontwarn com.tencent.mm.sdk.**{*;}
--keep class com.tencent.mm.sdk.**{*;}
+#weixin
+-dontwarn  com.tencent.**
+-keep class com.tencent.** {*;}
 
 #alipay
--libraryjars libs/alipaySDK-20150602.jar
+-dontwarn com.alipay.**
+-keep class com.alipay.** {*;}
 
--keep class com.alipay.android.app.IAlixPay{*;}
--keep class com.alipay.android.app.IAlixPay$Stub{*;}
--keep class com.alipay.android.app.IRemoteServiceCallback{*;}
--keep class com.alipay.android.app.IRemoteServiceCallback$Stub{*;}
--keep class com.alipay.sdk.app.PayTask{ public *;}
--keep class com.alipay.sdk.app.AuthTask{ public *;}
+-dontwarn  com.ta.utdid2.**
+-keep class com.ta.utdid2.** {*;}
+
+-dontwarn  com.ut.device.**
+-keep class com.ut.device.** {*;}
 ```
 
 ## About Me
